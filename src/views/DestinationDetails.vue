@@ -32,7 +32,7 @@
           >
             <img
               :src="require(`../assets/${experience.image}`)"
-              alt="['experience.name']"
+              alt="experience.name"
             />
             <span class="card__text">
               {{ experience.name }}
@@ -50,11 +50,13 @@ import { store } from "../store";
 import GoBack from "../components/GoBack.vue";
 export default {
   data() {
-    return {};
+    return {
+      // slug: this.$route.params.slug,
+    };
   },
   props: {
     slug: {
-      type: String,
+      type: Boolean,
       require: true,
     },
   },

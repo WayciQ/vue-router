@@ -1,10 +1,6 @@
 <template>
   <div id="nav">
     <p class="logo">The Travel App</p>
-    <!-- <router-link to="/brazil">Brazil</router-link>
-    <router-link to="/hawaii">Hawaii</router-link>
-    <router-link to="/jamaica">Jamaica</router-link>
-    <router-link to="/panama">Panama</router-link> -->
 
     <ul class="nav-links">
       <li class="links">
@@ -36,7 +32,6 @@ import { store } from "../store";
 export default {
   data() {
     return {
-      destinationId: this.$route.params.id,
       destinations: store.destinations,
     };
   },
